@@ -10,7 +10,7 @@
                 <Link to="" class="nav-link text-reset">Home</Link>
             </li>
             <li class="navbar-item me-2">
-                <Link to="ytl" class="nav-link text-reset">Youtube Live</Link>
+                <Link to="ytl" class="nav-link text-reset">Youtube</Link>
             </li>
         </ul>
     </nav>
