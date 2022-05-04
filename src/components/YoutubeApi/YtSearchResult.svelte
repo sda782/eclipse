@@ -1,8 +1,16 @@
 <script lang="ts">
+    import { onMount } from "svelte";
+
     import { useParams } from "svelte-navigator";
+    import type { ytSearchWrapper } from "../../models/ytSearchWrapper";
     import { videoList } from "../../services/Store";
+    import { getVideoFromSearch } from "../../services/YoutubeAPI";
     import YtCard from "./YtCard.svelte";
     const params = useParams();
+    onMount(async () => {
+        const res: ytSearchWrapper = await getVideoFromSearch(search_term);
+        $videoList = res;
+    });
     let search_term = $params.searchTerm;
 </script>
 

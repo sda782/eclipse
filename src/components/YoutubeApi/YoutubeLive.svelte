@@ -19,10 +19,10 @@
 </div>
 {#if $videoList != undefined}
     <div class="row justify-content-between">
-        <Route path="/">
+        <Route path="/ytl/">
             <YtTopVideos />
         </Route>
-        <Route path="/s/:searchTerm">
+        <Route path="/ytl/s/:searchTerm">
             <YtSearchResult />
         </Route>
     </div>

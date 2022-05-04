@@ -1,17 +1,12 @@
 <script lang="ts">
     import { useNavigate } from "svelte-navigator";
 
-    import type { ytSearchWrapper } from "../../models/ytSearchWrapper";
-    import { videoList } from "../../services/Store";
-    import { getVideoFromSearch } from "../../services/YoutubeAPI";
-
     const nav = useNavigate();
 
     let search_term: string = "";
-    const search = async () => {
-        const res: ytSearchWrapper = await getVideoFromSearch(search_term);
-        $videoList = res;
-        nav("s/" + search_term);
+    const search_btn = () => {
+        console.log("click");
+        nav("/s/" + search_term);
     };
 </script>
 
@@ -22,7 +17,7 @@
         placeholder="search video"
         bind:value={search_term}
     />
-    <button class="btn btn-primary col-2" on:click={search}
+    <button class="btn btn-primary col-2" on:click={search_btn}
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
