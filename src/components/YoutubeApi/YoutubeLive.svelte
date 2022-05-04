@@ -1,12 +1,12 @@
 <script lang="ts">
     import { onMount } from "svelte";
     import type { ytLiveRes } from "../../models/ytLiveRes.js";
-    import { getNewLive } from "../../services/YoutubeAPI.js";
+    import { getVideos } from "../../services/YoutubeAPI.js";
     import YtCard from "./YtCard.svelte";
 
     let data: ytLiveRes;
     onMount(async () => {
-        const res = await getNewLive();
+        const res = await getVideos();
         data = res;
     });
 </script>

@@ -10,10 +10,7 @@
         svelte can be used to create a Single Page Application.
     </p>
     <div>
-        <p>
-            Currently the app uses the Youtube Data Api to show channels that're
-            live
-        </p>
+        <p>Currently the app uses the Youtube Data Api to show top videos</p>
         <Link to="ytl" class="btn btn-primary">Explore</Link>
     </div>
 </div>
