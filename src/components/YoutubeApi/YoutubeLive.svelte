@@ -1,24 +1,30 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import type { ytLiveRes } from "../../models/ytLiveRes.js";
+    import { videoList } from "../../services/Store.js";
     import { getVideos } from "../../services/YoutubeAPI.js";
-    import YtCard from "./YtCard.svelte";
+    import YtTopVideos from "./YtTopVideos.svelte";
+    import YtSearchInput from "./YtSearchInput.svelte";
+    import YtSearchResult from "./YtSearchResult.svelte";
+    import { Route } from "svelte-navigator";
 
-    let data: ytLiveRes;
     onMount(async () => {
         const res = await getVideos();
-        data = res;
+        $videoList = res;
     });
 </script>
 
-<h1>Youtube live</h1>
-{#if data != undefined}
+<div class="d-flex">
+    <h1 class="me-5">Youtube</h1>
+    <YtSearchInput />
+</div>
+{#if $videoList != undefined}
     <div class="row justify-content-between">
-        {#each data.items as item}
-            <div class="col-3 mb-4 ">
-                <YtCard data={item} />
-            </div>
-        {/each}
+        <Route path="/">
+            <YtTopVideos />
+        </Route>
+        <Route path="/s/:searchTerm">
+            <YtSearchResult />
+        </Route>
     </div>
 {:else}
     <p>no data</p>

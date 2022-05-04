@@ -1,6 +1,6 @@
 import type { ytVideoRes } from "./ytVideoRes.js"
 
-export interface ytLiveRes {
+export interface ytSearchWrapper {
     kind: string
     etag: string
     nextPageToken: string

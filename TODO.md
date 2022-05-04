@@ -4,3 +4,6 @@
 - Search Term for live vid
 - Search vid?
 - User?
+
+# BUG
+- Fix search result redirect

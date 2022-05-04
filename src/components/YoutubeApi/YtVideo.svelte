@@ -17,16 +17,20 @@
 </script>
 
 {#if videoDetail != undefined}
-    <h1>{videoDetail.snippet.title}</h1>
+    <div class="row">
+        <div class="col">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/{$params.videoId}?autoplay=1"
+                title="YouTube video player"
+                frameborder="0"
+                allowfullscreen
+            />
+            <YtVideoDetail {videoDetail} />
+        </div>
+        <div class="col">
+            <YtCommentBox videoId={$params.videoId} />
+        </div>
+    </div>
 {/if}
-<iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/{$params.videoId}?autoplay=1"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-/>
-<YtVideoDetail {videoDetail} />
-<YtCommentBox videoId={$params.videoId} />

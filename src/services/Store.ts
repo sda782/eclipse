@@ -1,3 +1,5 @@
-import type { ytVideoRes } from "../models/ytVideoRes.js";
+import { writable } from "svelte/store";
+import type { ytSearchWrapper } from "../models/ytSearchWrapper";
 
-export const currentVideo: ytVideoRes | undefined = undefined
+const videoListInit: ytSearchWrapper = undefined
+export const videoList = writable(videoListInit)

@@ -5,5 +5,7 @@
     let topComment = commentThread.snippet.topLevelComment.snippet;
 </script>
 
-<h5>{topComment.textDisplay}</h5>
-<p><i>{topComment.authorDisplayName}</i></p>
+<div class="p-2 m-2 shadow-sm rounded">
+    <h5>{topComment.textDisplay}</h5>
+    <p><i>{topComment.authorDisplayName}</i></p>
+</div>

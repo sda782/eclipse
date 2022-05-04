@@ -13,9 +13,11 @@
     });
 </script>
 
-<h4>Comment box</h4>
-{#if comments != undefined}
-    {#each comments.items as commentThread}
-        <YtComment {commentThread} />
-    {/each}
-{/if}
+<div class="p-2  m-2 shadow rounded">
+    <h2>Comment box</h2>
+    {#if comments != undefined}
+        {#each comments.items as commentThread}
+            <YtComment {commentThread} />
+        {/each}
+    {/if}
+</div>

@@ -2,16 +2,31 @@
     import { Link } from "svelte-navigator";
 </script>
 
-<div class="container" id="header">
-    <nav class="navbar">
-        <Link to="" class="navbar-brand text-reset"><h1>Eclipse</h1></Link>
+<nav class="navbar navbar-light shadow" style="background-color: white;">
+    <div class="container-fluid">
+        <Link to="" class="navbar-brand text-reset"
+            ><h1>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-moon-fill"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
+                    />
+                </svg>
+                Eclipse
+            </h1></Link
+        >
         <ul class="navbar-nav flex-row">
-            <li class="navbar-item me-2">
-                <Link to="" class="nav-link text-reset">Home</Link>
-            </li>
-            <li class="navbar-item me-2">
-                <Link to="ytl" class="nav-link text-reset">Youtube</Link>
+            <li class="navbar-item me-5">
+                <Link to="ytl" class="nav-link text-reset"
+                    ><h5>Youtube</h5></Link
+                >
             </li>
         </ul>
-    </nav>
-</div>
+    </div>
+</nav>

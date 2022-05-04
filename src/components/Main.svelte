@@ -2,6 +2,7 @@
     import { Route } from "svelte-navigator";
     import Home from "./Home.svelte";
     import YoutubeLive from "./YoutubeApi/YoutubeLive.svelte";
+    import YtSearchResult from "./YoutubeApi/YtSearchResult.svelte";
     import YtVideo from "./YoutubeApi/YtVideo.svelte";
 </script>
 

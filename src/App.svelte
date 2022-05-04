@@ -5,7 +5,7 @@
 </script>
 
 <Router>
-	<div class="bg-primary text-white shadow">
+	<div class="sticky-top">
 		<Header />
 	</div>
 	<div class="container mt-5">
