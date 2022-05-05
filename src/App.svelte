@@ -5,10 +5,12 @@
 </script>
 
 <Router>
-	<div class="sticky-top">
-		<Header />
-	</div>
-	<div class="mt-5">
-		<Main />
+	<div class="h-100">
+		<div class="sticky-top">
+			<Header />
+		</div>
+		<div class="h-100">
+			<Main />
+		</div>
 	</div>
 </Router>

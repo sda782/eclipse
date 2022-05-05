@@ -12,7 +12,7 @@
 
 <div class="row w-25 h-100 mt-1">
     <input
-        class="form-control col-10"
+        class="form-control col-9 me-2"
         type="text"
         placeholder="search video"
         bind:value={search_term}

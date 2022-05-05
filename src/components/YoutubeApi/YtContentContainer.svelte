@@ -5,10 +5,10 @@
     import { Route } from "svelte-navigator";
 </script>
 
-<div class="d-flex mb-2">
+<!-- <div class="d-flex mb-2">
     <h1 class="me-5">Search</h1>
-    <YtSearchInput />
-</div>
+<YtSearchInput />
+</div> -->
 <div class="row">
     <Route path="/">
         <YtTopVideos />

@@ -1,8 +1,9 @@
 <script>
     import { Link } from "svelte-navigator";
+    import YtSearchInput from "./YoutubeApi/YtSearchInput.svelte";
 </script>
 
-<nav class="navbar navbar-light shadow" style="background-color: white;">
+<nav class="navbar navbar-light shadow bg-primary">
     <div class="container-fluid">
         <Link to="ytl" class="navbar-brand text-reset"
             ><h1>
@@ -21,6 +22,7 @@
                 Eclipse - YT Client
             </h1></Link
         >
+        <YtSearchInput />
         <ul class="navbar-nav flex-row">
             <li class="navbar-item me-5">
                 <Link to="ytl" class="nav-link text-reset"
