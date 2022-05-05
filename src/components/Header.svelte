@@ -23,12 +23,13 @@
             </h1></Link
         >
         <YtSearchInput />
-        <ul class="navbar-nav flex-row">
+        <p>profile</p>
+        <!--         <ul class="navbar-nav flex-row">
             <li class="navbar-item me-5">
                 <Link to="ytl" class="nav-link text-reset"
                     ><h5>Top videos</h5></Link
                 >
             </li>
-        </ul>
+        </ul> -->
     </div>
 </nav>

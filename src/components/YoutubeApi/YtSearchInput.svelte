@@ -10,14 +10,14 @@
     };
 </script>
 
-<div class="row w-25 h-100 mt-1">
+<div class="row w-25 h-100">
     <input
-        class="form-control col-9 me-2"
+        class="form-control col-8 me-2"
         type="text"
         placeholder="search video"
         bind:value={search_term}
     />
-    <button class="btn btn-primary col-2" on:click={search_btn}
+    <button class="btn btn-outline-dark col-3" on:click={search_btn}
         ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
