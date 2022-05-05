@@ -6,7 +6,7 @@
     let search_term: string = "";
     const search_btn = () => {
         console.log("click");
-        nav("/s/" + search_term);
+        nav(search_term);
     };
 </script>
 

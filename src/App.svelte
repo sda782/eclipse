@@ -8,7 +8,7 @@
 	<div class="sticky-top">
 		<Header />
 	</div>
-	<div class="container mt-5">
+	<div class="mt-5">
 		<Main />
 	</div>
 </Router>

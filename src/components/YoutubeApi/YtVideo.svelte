@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    import { useParams } from "svelte-navigator";
+    import { useNavigate, useParams } from "svelte-navigator";
     import type { ytVideoDetail } from "../../models/ytVideoDetail.js";
     import type { ytVideoWrapper } from "../../models/ytVideoWrapper.js";
     import { getVideoFromId } from "../../services/YoutubeAPI.js";
@@ -9,6 +9,7 @@
 
     let params = useParams();
     let videoDetail: ytVideoDetail;
+    const nav = useNavigate();
 
     onMount(async () => {
         const res: ytVideoWrapper = await getVideoFromId($params.videoId);
@@ -16,6 +17,12 @@
     });
 </script>
 
+<button
+    class="btn btn-secondary p-2 mb-2"
+    on:click={() => {
+        nav(-1);
+    }}>return to search</button
+>
 {#if videoDetail != undefined}
     <div class="row">
         <div class="col">
