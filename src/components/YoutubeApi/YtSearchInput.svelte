@@ -6,7 +6,7 @@
     let search_term: string = "";
     const search_btn = () => {
         console.log("click");
-        nav(search_term);
+        nav("ytl/" + search_term);
     };
 </script>
 

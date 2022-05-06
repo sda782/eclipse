@@ -3,7 +3,7 @@
     import { useNavigate, useParams } from "svelte-navigator";
     import type { ytVideoDetail } from "../../models/ytVideoDetail.js";
     import type { ytVideoWrapper } from "../../models/ytVideoWrapper.js";
-    import { getVideoFromId } from "../../services/YoutubeAPI.js";
+    import { getVideoFromId } from "../../services/ApiManager.js";
     import YtCommentBox from "./YtCommentBox.svelte";
     import YtVideoDetail from "./YtVideoDetail.svelte";
 

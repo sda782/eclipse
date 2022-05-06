@@ -14,5 +14,6 @@
         style="max-height: 12em; min-height: 12em;"
     >
         <h4 class="card-title">{info.title}</h4>
+        <p>{info.publishedAt.substring(0, info.publishedAt.length - 10)}</p>
     </div>
 </Link>

@@ -8,7 +8,7 @@
 
 <div class="container m-0 p-0 w-100 h-100" style="max-width: none;">
     <div class="row w-100 h-100">
-        <div class="col-2 pt-4 shadow"><Sidebar /></div>
+        <div class="col-2 pt-4 pe-0 shadow"><Sidebar /></div>
         <div class="col-10 p-4">
             <Route path="/" component={Home} />
             <Route path="/ytl/*" component={YtContentContainer} />
