@@ -3,7 +3,8 @@ import {
     getVideos as getVideosYT,
     getVideoCommentThread as getVideoCommentThreadYT,
     getVideoFromSearch as getVideoFromSearchYT,
-    getVideoFromId as getVideoFromIdYT
+    getVideoFromId as getVideoFromIdYT,
+    getSubscriptions as getSubscriptionsYT
 } from "./YoutubeAPI"
 
 export const getVideos = async () => {
@@ -21,4 +22,8 @@ export const getVideoFromSearch = async (search_term: string) => {
 export const getVideoFromId = async (videoId: string) => {
     //return await getVideoFromIdYT(videoId)
     return mock_vid
+}
+
+export const getSubscriptions = async (channelId: string) => {
+    return getSubscriptionsYT(channelId)
 }

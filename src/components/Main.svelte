@@ -3,6 +3,7 @@
     import Home from "./Home.svelte";
     import Sidebar from "./Sidebar.svelte";
     import YtContentContainer from "./YoutubeApi/YtContentContainer.svelte";
+    import YtSubscriptions from "./YoutubeApi/YtSubscriptions.svelte";
     import YtVideo from "./YoutubeApi/YtVideo.svelte";
 </script>
 
@@ -13,6 +14,7 @@
             <Route path="/" component={Home} />
             <Route path="/ytl/*" component={YtContentContainer} />
             <Route path="/ytv/:videoId" component={YtVideo} />
+            <Route path="/yts/:channelId" component={YtSubscriptions} />
         </div>
     </div>
 </div>

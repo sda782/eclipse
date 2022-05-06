@@ -9,7 +9,7 @@
         <Link to="ytl" class="nav-link text-reset"><h6>Top videos</h6></Link>
     </li>
     <li class="list-group-item list-group-item-action">
-        <Link to="ytl" class="nav-link text-reset">
+        <Link to="yts/UCffTrvqdA3frhdxOayWWYCw" class="nav-link text-reset">
             <h6>My subscriptions</h6>
         </Link>
     </li>
