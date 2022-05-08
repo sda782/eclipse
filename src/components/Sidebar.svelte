@@ -2,7 +2,7 @@
     import { Link } from "svelte-navigator";
 </script>
 
-<h2 class="ps-4">Menu</h2>
+<!-- <h2 class="ps-4">Menu</h2> -->
 <ul class="list-group list-group-flush">
     <li class="divider" />
     <li class="list-group-item list-group-item-action">

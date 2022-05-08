@@ -33,8 +33,8 @@
     <div class="row">
         <div class="col">
             <iframe
-                width="560"
-                height="315"
+                class="w-100"
+                height="500"
                 src="https://www.youtube.com/embed/{$params.videoId}?autoplay=1"
                 title="YouTube video player"
                 frameborder="0"

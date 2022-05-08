@@ -12,11 +12,13 @@
     });
 </script>
 
-<div class="p-2  m-2 shadow rounded">
-    <h2>Comments</h2>
-    {#if comments != undefined}
-        {#each comments.items as commentThread}
-            <YtComment {commentThread} />
-        {/each}
-    {/if}
+<div class="p-2  m-2 shadow rounded" style="height: 50vh;">
+    <h2>Comments ({comments != undefined ? comments.items.length : ""})</h2>
+    <div class="overflow-scroll rounded" style="height: 90%;">
+        {#if comments != undefined}
+            {#each comments.items as commentThread}
+                <YtComment {commentThread} />
+            {/each}
+        {/if}
+    </div>
 </div>
