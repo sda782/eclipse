@@ -13,6 +13,7 @@
     let search_term = $params.searchTerm;
 </script>
 
+<h3>Search Result</h3>
 {#if search_term != ""}
     <p><i>show result for <strong>{search_term}</strong></i></p>
 {/if}

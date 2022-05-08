@@ -9,4 +9,5 @@
     });
 </script>
 
+<h3>Top Videos</h3>
 <YtVideoList {videoList} />

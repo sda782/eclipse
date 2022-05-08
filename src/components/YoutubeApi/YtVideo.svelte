@@ -4,6 +4,7 @@
     import type { ytVideoDetail } from "../../models/ytVideoDetail.js";
     import type { ytVideoWrapper } from "../../models/ytVideoWrapper.js";
     import { getVideoFromId } from "../../services/ApiManager.js";
+    import { watch_history } from "../../services/Store.js";
     import YtCommentBox from "./YtCommentBox.svelte";
     import YtVideoDetail from "./YtVideoDetail.svelte";
 
@@ -14,7 +15,12 @@
     onMount(async () => {
         const res: ytVideoWrapper = await getVideoFromId($params.videoId);
         videoDetail = res.items[0];
+        addToHistory(videoDetail);
     });
+
+    const addToHistory = (vid) => {
+        $watch_history = [...$watch_history, vid];
+    };
 </script>
 
 <button

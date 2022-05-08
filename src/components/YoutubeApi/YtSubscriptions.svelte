@@ -9,7 +9,7 @@
     }); */
 </script>
 
-<h2>YtSubscriptions - WIP</h2>
+<h3>YtSubscriptions - WIP</h3>
 {#if channel_data != undefined}
     {channel_data}
 {/if}
