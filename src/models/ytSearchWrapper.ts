@@ -10,5 +10,11 @@ export interface ytSearchWrapper {
         totalResults: number
         resultsPerPage: number
     }
+    statistics: {
+        commentCount: number
+        favoriteCount: number
+        likeCount: number
+        viewCount: number
+    }
     items: ytVideoRes[]
 }

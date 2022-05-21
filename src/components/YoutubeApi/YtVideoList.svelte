@@ -5,7 +5,7 @@
 
 {#if videoList != undefined}
     {#each videoList.items as item}
-        {#if item.id.kind == "youtube#video"}
+        {#if item.kind == "youtube#video" || item.id.kind == "youtube#video"}
             <div class="col-3 mb-4 ">
                 <YtCard data={item} />
             </div>

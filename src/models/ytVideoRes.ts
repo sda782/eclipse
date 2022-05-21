@@ -9,6 +9,8 @@ export interface ytVideoRes {
         publishedAt: string
         channelId: string
         title: string
+        defaultAudioLanguage: string
+        defaultLanguage: string
         description: string
         thumbnails: {
             default: {
@@ -30,5 +32,6 @@ export interface ytVideoRes {
         channelTitle: string
         liveBroadcastContent: string
         publishTime: string
+        tags: string[]
     }
 }

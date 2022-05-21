@@ -5,9 +5,13 @@
 
     export let data: ytVideoRes;
     let info = data.snippet;
+    let id: string;
+    if (data.id.videoId !== undefined) id = data.id.videoId;
+    else id = data.id.toString();
+    console.log(data);
 </script>
 
-<Link to="/ytv/{data.id.videoId}" class="card shadow bg-white text-reset">
+<Link to="/ytv/{id}" class="card shadow bg-white text-reset">
     <img class="card-img-top" src={info.thumbnails.high.url} alt="vid thumb" />
     <div
         class="p-3 overflow-hidden"

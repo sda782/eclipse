@@ -6,6 +6,7 @@
     onMount(async () => {
         const res = await getVideos();
         videoList = res;
+        console.log(videoList);
     });
 </script>
 

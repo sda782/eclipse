@@ -8,20 +8,20 @@ import {
 } from "./YoutubeAPI"
 
 export const getVideos = async () => {
-    //return await getVideosYT()
-    return mock_top_vid
+    return await getVideosYT()
+    //return mock_top_vid
 }
 export const getVideoCommentThread = async (videoId: string) => {
-    //return await getVideoCommentThreadYT(videoId)
-    return mock_vid_com
+    return await getVideoCommentThreadYT(videoId)
+    //return mock_vid_com
 }
 export const getVideoFromSearch = async (search_term: string) => {
-    //return await getVideoFromSearchYT(search_term)
-    return mock_vid_fr_srch
+    return await getVideoFromSearchYT(search_term)
+    //return mock_vid_fr_srch
 }
 export const getVideoFromId = async (videoId: string) => {
-    //return await getVideoFromIdYT(videoId)
-    return mock_vid
+    return await getVideoFromIdYT(videoId)
+    //return mock_vid
 }
 
 export const getSubscriptions = async (channelId: string) => {
