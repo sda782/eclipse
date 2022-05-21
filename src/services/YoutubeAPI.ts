@@ -6,7 +6,6 @@ const api_key = 'AIzaSyDAO3QTYl8gr7yT7VooeSVe3U8drjbcGoA'
 const base_url = 'https://www.googleapis.com/youtube/v3'
 
 export const getVideos = async (): Promise<ytSearchWrapper> => {
-    //const res: AxiosResponse = await axios.get(base_url + '/search?part=snippet&maxResults=24&type=video&key=' + api_key)
     const res: AxiosResponse = await axios.get(base_url + '/videos?part=snippet%2Cstatistics&chart=mostPopular&regionCode=US&maxResults=24&key=' + api_key)
     console.log(res)
     if (res.status == 200) return res.data
@@ -15,7 +14,6 @@ export const getVideos = async (): Promise<ytSearchWrapper> => {
 export const getVideoCommentThread = async (videoId: string): Promise<ytCommentWrapper> => {
     const res: AxiosResponse = await axios.get(base_url + `/commentThreads?part=snippet%2Creplies&videoId=${videoId}&key=` + api_key)
     if (res.status == 200) return res.data
-
 }
 
 export const getVideoFromId = async (videoId: string): Promise<ytVideoWrapper> => {
@@ -25,10 +23,5 @@ export const getVideoFromId = async (videoId: string): Promise<ytVideoWrapper> =
 
 export const getVideoFromSearch = async (search_term: string): Promise<ytSearchWrapper> => {
     const res: AxiosResponse = await axios.get(base_url + `/search?part=snippet&maxResults=24&q=${search_term}&key=` + api_key)
-    if (res.status == 200) return res.data
-}
-
-export const getSubscriptions = async (channelId: string): Promise<any> => {
-    const res: AxiosResponse = await axios.get(base_url + `/subscriptions?part=snippet%2CcontentDetails&channelId=UC_x5XG1OV2P6uZZ5FSM9Ttw&key=` + api_key)
     if (res.status == 200) return res.data
 }
