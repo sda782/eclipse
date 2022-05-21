@@ -6,6 +6,6 @@
 </script>
 
 <div class="p-2 m-2 ">
-    <h5>{topComment.textDisplay}</h5>
+    <h5 id="body_text">{topComment.textOriginal}</h5>
     <p><i>{topComment.authorDisplayName}</i></p>
 </div>
